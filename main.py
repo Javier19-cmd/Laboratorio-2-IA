@@ -23,3 +23,9 @@ probabilidades = {
 }
 
 b.Bayes(red, probabilidades) # Enviando los datos a la clase Bayes.
+
+query = ('C', ('D', 1))
+
+b.Bayes.inferencia(red, probabilidades, query)
+
+print(b.Bayes.inferencia(red, probabilidades, query))
