@@ -9,7 +9,9 @@ Clase que se encarga de construir el modelo de Bayes para calcular las probabili
 class Bayes(object): 
 
     # Recibe un diccionario con las probabilidades de cada evento.
-    def __init__(self, probabilidades):
+    def __init__(self, red, probabilidades):
+        self.red = red
         self.probabilidades = probabilidades
 
+        print("Red Bayesiana: ", self.red)
         print("Probabilidades: ", self.probabilidades)
