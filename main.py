@@ -28,4 +28,7 @@ query = ('C', ('D', 1))
 
 b.Bayes.inferencia(red, probabilidades, query)
 
-print(b.Bayes.inferencia(red, probabilidades, query))
+
+
+
+#print(b.Bayes.inferencia(red, probabilidades, query))
