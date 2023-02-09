@@ -20,6 +20,7 @@ class Bayes(object):
 
         self.descrita() # Verificando que la red sea descrita.
         self.compacta() # Devolviendo la red compacta.
+        self.enumeracion() # Realizando el algoritmo de enumeración sobre la red bayesiana.
 
     def inferencia(red, probs, query): # Método para calcular las probabilidades dadas en el query.
 
@@ -51,6 +52,16 @@ class Bayes(object):
         # Retornando la probabilidad de la variable.
         return prob
 
+    def enumeracion(self): # Método para realizar el algoritmo de enumeración sobre la red bayesiana.
+    
+        # Verificando que la suma de las probabilidades sea 1 en el diccionario.
+        for node, values in self.probabilidades.items():
+            if sum(values["distribucion"]) != 1:
+                print("La suma de las probabilidades no es 1.")
+                return False
+            else: 
+                print("La suma de las probabilidades es 1.")
+                return True
 
     def descrita(self): #Método para verificar que la red sea descrita.
         
