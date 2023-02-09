@@ -100,3 +100,6 @@ class Bayes(object):
                 compressed_network[node] = values["padres"]
         
         return compressed_network
+
+    def devolver_red(self): # Devolviendo la red bayesiana.
+        return self.red_bayesiana
