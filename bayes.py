@@ -51,6 +51,7 @@ class Bayes(object):
         # Retornando la probabilidad de la variable.
         return prob
 
+
     def descrita(self): #Método para verificar que la red sea descrita.
         
         nodos = self.probabilidades.keys()
@@ -77,20 +78,14 @@ class Bayes(object):
         return True
 
     def compacta(self): # Devolviendo la red compacta.
-        # Se usará el método de eliminación.
+        
+        compressed_network = {}
 
-        # Obteniendo la lista de nodos que hay en la red.
-        nodos = list(self.probabilidades.keys())
-
-        while len(nodos) > 1:
-
-            # Seleccionando el nodo con menos padres.
-            grado_conetividad = [len(self.probabilidades[nodo]) for nodo in nodos]
-            indice = grado_conetividad.index(min(grado_conetividad))
+        for node, values in self.probabilidades.items():
             
-            # Eliminando del diccionario el nodo con menos padres.
-            vecinos = self.red_bayesiana[indice]
-            del self.red_bayesiana[indice]
-            nodos.pop(indice)
-
-        #print(self.red_bayesiana)
+            if values["padres"] == []:
+                compressed_network[node] = values["distribucion"]
+            else: 
+                compressed_network[node] = values["padres"]
+        
+        return compressed_network
