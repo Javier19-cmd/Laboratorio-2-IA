@@ -89,6 +89,7 @@ class Bayes(object):
         return True
 
     def compacta(self): # Devolviendo la red compacta.
+        # Devolver como P(A)P(B|A)P(C|A)P(D|C)
         
         compressed_network = {}
 
