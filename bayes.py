@@ -89,18 +89,25 @@ class Bayes(object):
         return True
 
     def compacta(self): # Devolviendo la red compacta.
-        # Devolver como P(A)P(B|A)P(C|A)P(D|C)
-        
-        compressed_network = {}
+        # Devolver un string como P(A)P(B|A)P(C|A)P(D|C) de la red bayesiana.
 
-        for node, values in self.probabilidades.items():
-            
-            if values["padres"] == []:
-                compressed_network[node] = values["distribucion"]
-            else: 
-                compressed_network[node] = values["padres"]
-        
-        return compressed_network
+        # Inicializando la red bayesiana.
+        red_c = ""
+
+        # Recorriendo la primera red bayesiana.
+        for nodo, valores in self.red.items():
+            # Verificando que el nodo no tenga padres.
+            if len(valores) == 0:
+                red_c += "P(" + nodo + ")"
+            # Verificando que el nodo tenga padres.
+            else:
+                red_c += "P(" + nodo + "|"
+                for padre in valores:
+                    red_c += padre
+                red_c += ")"
+
+        print("Red Bayesiana Compacta: ", red_c)
+        return red_c
 
     def devolver_red(self): # Devolviendo la red bayesiana.
         return self.red_bayesiana
