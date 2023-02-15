@@ -1,0 +1,8 @@
+README.md
+setup.py
+Librería/__init__.py
+Librería/bayes.py
+jbnetwork.egg-info/PKG-INFO
+jbnetwork.egg-info/SOURCES.txt
+jbnetwork.egg-info/dependency_links.txt
+jbnetwork.egg-info/top_level.txt
