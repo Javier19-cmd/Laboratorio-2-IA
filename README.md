@@ -20,9 +20,9 @@ probabilidades = {
     "D": {"distribucion": [0.6, 0.4], "padres": [("C", 0), ("C", 1)]} # 0.6 = P(D=0|C=0), 0.4 = P(D=0|C=1)
 }
 
-3. Estas dos redes se deben pasar a la librería de Bayes de la siguiente forma: 
+3. Estas dos redes se deben pasar a la librería de BayesianNetwork de la siguiente forma: 
 
-bayes = Bayes(red, probabilidades)
+bayes = BayesianNetwork(red, probabilidades)
 
 Esto devolverá un texto que indica si la red está completamente descrita o no.
 

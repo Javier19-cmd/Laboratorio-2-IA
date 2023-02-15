@@ -1,5 +1,5 @@
 [project]
-name = "jbnetwork"
+name = "BayesianNetwork"
 version = "0.0.3"
 authors = [
   { name="Javier Valle", email="sebasvalle17@gmail.com" },

@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+BayesianNetwork.egg-info/PKG-INFO
+BayesianNetwork.egg-info/SOURCES.txt
+BayesianNetwork.egg-info/dependency_links.txt
+BayesianNetwork.egg-info/top_level.txt
+Librería/BayesianNetwork.py
+Librería/__init__.py
