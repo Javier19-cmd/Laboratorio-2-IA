@@ -1,7 +1,8 @@
 README.md
+pyproject.toml
 setup.py
 Librería/__init__.py
-Librería/bayes.py
+Librería/bay.py
 jbnetwork.egg-info/PKG-INFO
 jbnetwork.egg-info/SOURCES.txt
 jbnetwork.egg-info/dependency_links.txt

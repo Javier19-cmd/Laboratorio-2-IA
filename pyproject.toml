@@ -1,0 +1,18 @@
+[project]
+name = "jbnetwork"
+version = "0.0.3"
+authors = [
+  { name="Javier Valle", email="sebasvalle17@gmail.com" },
+]
+description = "Implementación del algoritmo para una red Bayesiana."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Javier19-cmd/Laboratorio-2-IA"
+"Bug Tracker" = "https://github.com/Javier19-cmd/Laboratorio-2-IA"
