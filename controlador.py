@@ -4,7 +4,7 @@ Carnet: 20159
 Fecha: 02/02/2023
 """
 
-import BayesianNetwork
+import RedBayes
 
 # Creando la estructura de la red bayesiana.
 red = {
@@ -22,11 +22,11 @@ probabilidades = {
     "D": {"distribucion": [0.6, 0.4], "padres": [("C", 0), ("C", 1)]} # 0.6 = P(D=0|C=0), 0.4 = P(D=0|C=1)
 }
 
-BayesianNetwork.BayesianNetwork(red, probabilidades) # Enviando los datos a la clase Bayes.
+RedBayes.RedBayes(red, probabilidades) # Enviando los datos a la clase Bayes.
 
 query = ('C', ('D', 1))
 
-BayesianNetwork.BayesianNetwork.inferencia(red, probabilidades, query)
+RedBayes.RedBayes.inferencia(red, probabilidades, query)
 
 
 #print(b.Bayes.inferencia(red, probabilidades, query))

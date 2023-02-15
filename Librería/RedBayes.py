@@ -6,7 +6,7 @@ Fecha: 02/02/2023
 Clase que se encarga de construir el modelo de Bayes para calcular las probabilidades que se ingresen en el programa.
 """
 
-class BayesianNetwork(object): 
+class RedBayes(object): 
 
     # Recibe un diccionario con las probabilidades de cada evento.
     def __init__(self, red, probabilidades):

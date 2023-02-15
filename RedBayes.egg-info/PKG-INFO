@@ -1,3 +1,18 @@
+Metadata-Version: 2.1
+Name: RedBayes
+Version: 0.0.0
+Summary: Implementación del algoritmo para una red Bayesiana.
+Author: Javier
+Author-email: Javier Valle <sebasvalle17@gmail.com>
+Project-URL: Homepage, https://github.com/Javier19-cmd/Laboratorio-2-IA
+Project-URL: Bug Tracker, https://github.com/Javier19-cmd/Laboratorio-2-IA
+Keywords: python,bayes
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
 # Explicación de la funcionalidad de la librería.
 
 La presente librería permite crear y analizar redes bayesianas. Para lo mismo, se necsita crear lo siguiente: 
